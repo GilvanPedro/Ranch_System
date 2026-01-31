@@ -1,28 +1,28 @@
 package br.com.RanchSystem.Entity;
 
+import java.util.Date;
+
 public class Gado {
-    private long id;
     private String nome;
-    private String nascimento;
+    private Date nascimento;
     private String raca;
-    private String RGN;
+    private String proprietario;
+    private String serie;
+    private long rgn;
+    private String categoria;
+    private byte totalFilhos;
     private boolean sexo;
 
-    public Gado(long id, String nome, String nascimento, String raca, String RGN,  boolean sexo) {
-        this.id = id;
+    public Gado(String nome, Date nascimento, String raca, String proprietario, String serie, long rgn, String categoria, byte totalFilhos,  boolean sexo) {
         this.nome = nome;
         this.nascimento = nascimento;
         this.raca = raca;
-        this.RGN = RGN;
+        this.proprietario = proprietario;
+        this.serie = serie;
+        this.rgn = rgn;
+        this.categoria = categoria;
+        this.totalFilhos = totalFilhos;
         this.sexo = sexo;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getNome() {
@@ -33,11 +33,11 @@ public class Gado {
         this.nome = nome;
     }
 
-    public String getNascimento() {
+    public Date getNascimento() {
         return nascimento;
     }
 
-    public void setNascimento(String nascimento) {
+    public void setNascimento(Date nascimento) {
         this.nascimento = nascimento;
     }
 
@@ -49,12 +49,28 @@ public class Gado {
         this.raca = raca;
     }
 
-    public String getRGN() {
-        return RGN;
+    public String getProprietario() {
+        return proprietario;
     }
 
-    public void setRGN(String RGN) {
-        this.RGN = RGN;
+    public void setProprietario(String proprietario) {
+        this.proprietario = proprietario;
+    }
+
+    public long getRgn() {
+        return rgn;
+    }
+
+    public void setRgn(long rgn) {
+        this.rgn = rgn;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public boolean isSexo() {
@@ -63,5 +79,21 @@ public class Gado {
 
     public void setSexo(boolean sexo) {
         this.sexo = sexo;
+    }
+
+    public String getSerie() {
+        return serie;
+    }
+
+    public void setSerie(String serie) {
+        this.serie = serie;
+    }
+
+    public byte getTotalFilhos() {
+        return totalFilhos;
+    }
+
+    public void setTotalFilhos(byte totalFilhos) {
+        this.totalFilhos = totalFilhos;
     }
 }

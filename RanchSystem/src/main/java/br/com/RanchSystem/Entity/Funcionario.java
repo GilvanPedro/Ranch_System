@@ -2,11 +2,11 @@ package br.com.RanchSystem.Entity;
 
 public class Funcionario {
     private String nome;
-    private long cpf;
+    private String cpf;
     private double salario;
-    private long telefone;
+    private String telefone;
 
-    public Funcionario(String nome, long cpf, double salario, long telefone) {
+    public Funcionario(String nome, String cpf, double salario, String telefone) {
         this.nome = nome;
         this.cpf = cpf;
         this.salario = salario;
@@ -21,11 +21,11 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public long getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(long cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -37,21 +37,16 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public long getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(long telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", salario=" + salario +
-                ", telefone=" + telefone +
-                '}';
+        return "Nome: "+nome+" | CPF: "+cpf+" | Salario: "+salario+" | Telefone: "+telefone;
     }
 }

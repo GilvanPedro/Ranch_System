@@ -1,14 +1,14 @@
 package br.com.RanchSystem;
 
 import br.com.RanchSystem.Controller.FuncionarioController;
-import br.com.RanchSystem.Entity.Funcionario;
 
 public class Main {
     public static void main(String[] args) {
         FuncionarioController funcionarioController =  new FuncionarioController();
 
-        funcionarioController.adicionarFuncionario("Marcos", 4385784, 3434, 454345);
-        funcionarioController.mostrarFuncionarios();
+        funcionarioController.adicionarFuncionario("Fernanda Macedo", "40893885037", 1300.08, "62934583490");
+        funcionarioController.escreverArquivo();
 
+        funcionarioController.mostrarFuncionarios();
     }
 }
