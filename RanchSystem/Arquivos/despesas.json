@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "descricao": "Venda de Gado",
+    "tipo": "GANHO",
+    "categoria": "GADO",
+    "valor": 12000.0,
+    "data": "Feb 1, 2026, 1:12:50 AM"
+  },
+  {
+    "id": 2,
+    "descricao": "Compra de Ração",
+    "tipo": "GASTO",
+    "categoria": "GADO",
+    "valor": 1000.0,
+    "data": "Feb 1, 2026, 1:13:17 AM"
+  }
+]

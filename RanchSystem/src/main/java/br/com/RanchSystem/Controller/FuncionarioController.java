@@ -16,7 +16,7 @@ import java.util.List;
 
 public class FuncionarioController {
 
-    private String ARQUIVO = "funcionarios.json";
+    private String ARQUIVO = "Arquivos/funcionarios.json";
 
     List<Funcionario> funcionariosLista = new ArrayList<>();
     Funcionario funcionario;
@@ -67,24 +67,15 @@ public class FuncionarioController {
     }
 
     // ADICIONAR SOMENTE SE CPF NÃO EXISTIR
-    public void adicionarFuncionario(String nome, String cpf, double salario, String telefone) {
+    public String adicionarFuncionario(String nome, String cpf, double salario, String telefone) {
 
         lerArquivo();
 
-        if (!validarCpf.cpfValido(cpf)) {
-            System.out.println("CPF inválido.");
-            return;
-        }
-
-        if (!validarTelefone.telefoneValido(telefone)) {
-            System.out.println("Telefone inválido.");
-            return;
-        }
-
-        if (cpfExiste(cpf)) {
-            System.out.println("CPF já cadastrado.");
-            return;
-        }
+        if (nome == null || nome.trim().isEmpty()) return "O nome não pode estar vazio.";
+        if (!validarCpf.cpfValido(cpf)) return "CPF inválido.";
+        if (!validarTelefone.telefoneValido(telefone)) return "Telefone inválido.";
+        if (cpfExiste(cpf)) return "CPF já cadastrado.";
+        if (salario <= 0) return "O salário deve ser maior que zero.";
 
         funcionario = new Funcionario(
                 nome,
@@ -94,6 +85,7 @@ public class FuncionarioController {
         );
 
         funcionariosLista.add(funcionario);
+        return "Sucesso";
     }
 
 
@@ -124,6 +116,11 @@ public class FuncionarioController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<Funcionario> getFuncionariosLista() {
+        lerArquivo();
+        return funcionariosLista;
     }
 
     public void removerFuncionario(String cpf) {

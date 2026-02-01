@@ -1,10 +1,8 @@
 package br.com.RanchSystem.Entity;
 
-import java.util.Date;
-
 public class Gado {
     private String nome;
-    private Date nascimento;
+    private String nascimento;
     private String raca;
     private String proprietario;
     private String serie;
@@ -13,7 +11,7 @@ public class Gado {
     private byte totalFilhos;
     private boolean sexo;
 
-    public Gado(String nome, Date nascimento, String raca, String proprietario, String serie, long rgn, String categoria, byte totalFilhos,  boolean sexo) {
+    public Gado(String nome, String nascimento, String raca, String proprietario, String serie, long rgn, String categoria, byte totalFilhos,  boolean sexo) {
         this.nome = nome;
         this.nascimento = nascimento;
         this.raca = raca;
@@ -33,11 +31,11 @@ public class Gado {
         this.nome = nome;
     }
 
-    public Date getNascimento() {
+    public String getNascimento() {
         return nascimento;
     }
 
-    public void setNascimento(Date nascimento) {
+    public void setNascimento(String nascimento) {
         this.nascimento = nascimento;
     }
 
@@ -95,5 +93,20 @@ public class Gado {
 
     public void setTotalFilhos(byte totalFilhos) {
         this.totalFilhos = totalFilhos;
+    }
+
+    @Override
+    public String toString() {
+        return "Gado{" +
+                "nome='" + nome + '\'' +
+                ", nascimento='" + nascimento + '\'' +
+                ", raca='" + raca + '\'' +
+                ", proprietario='" + proprietario + '\'' +
+                ", serie='" + serie + '\'' +
+                ", rgn=" + rgn +
+                ", categoria='" + categoria + '\'' +
+                ", totalFilhos=" + totalFilhos +
+                ", sexo=" + sexo +
+                '}';
     }
 }
