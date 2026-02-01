@@ -1,0 +1,26 @@
+[
+  {
+    "Nome": "Roberto",
+    "Cpf": "81754319033",
+    "Salario": 1456.0,
+    "Telefone": "62934583490"
+  },
+  {
+    "Nome": "Sergio Paralely",
+    "Cpf": "78617540060",
+    "Salario": 1756.0,
+    "Telefone": "62934583490"
+  },
+  {
+    "Nome": "Marcelo",
+    "Cpf": "14535645000",
+    "Salario": 3434.0,
+    "Telefone": "62934583490"
+  },
+  {
+    "Nome": "Fernanda Macedo",
+    "Cpf": "40893885037",
+    "Salario": 1300.08,
+    "Telefone": "62934583490"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "Nome": "Carlos macedo",
+    "Nascimento": "",
+    "Raca": "agdsf",
+    "Proprietario": "G",
+    "Serie": "ghsd",
+    "Rgn": 532,
+    "Categoria": "PO",
+    "TotalFilhos": 1,
+    "Sexo": true
+  },
+  {
+    "Nome": "asdfadsf",
+    "Nascimento": "",
+    "Raca": "asdfasfa",
+    "Proprietario": "asdfasf",
+    "Serie": "gads",
+    "Rgn": 434,
+    "Categoria": "MS",
+    "TotalFilhos": 0,
+    "Sexo": true
+  },
+  {
+    "Nome": "asdfas",
+    "Nascimento": "",
+    "Raca": "Desconhecida",
+    "Proprietario": "fasdfas",
+    "Serie": "ghjj",
+    "Rgn": 543,
+    "Categoria": "TE",
+    "TotalFilhos": 0,
+    "Sexo": false
+  }
+]
