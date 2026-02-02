@@ -1,0 +1,16 @@
+[
+  {
+    "tipo": "milho",
+    "dataPlantacao": "Jan 31, 2026, 10:57:33 PM",
+    "dataColheita": "May 31, 2026, 10:57:33 PM",
+    "hectares": 12.5,
+    "agrotoxicos": false
+  },
+  {
+    "tipo": "café",
+    "dataPlantacao": "Jan 31, 2026, 10:57:33 PM",
+    "dataColheita": "Jan 31, 2028, 10:57:33 PM",
+    "hectares": 30.0,
+    "agrotoxicos": true
+  }
+]
