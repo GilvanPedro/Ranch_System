@@ -152,21 +152,21 @@ Ao iniciar a aplicação, você será recebido por uma tela principal que permit
 
 O Dashboard apresenta uma visão geral da fazenda, funcionando como o painel administrativo principal do sistema. As informações são exibidas em cards visuais, permitindo ao usuário acompanhar rapidamente os principais indicadores, como total de gados, número de funcionários, plantações, saldo financeiro, área total, média iABCZ, status da fazenda e data atual. Esse modelo facilita a tomada de decisões ao concentrar dados importantes em uma única tela. O uso de cores nos valores ajuda a destacar cada métrica, tornando a leitura mais intuitiva. É uma tela focada em resumo, monitoramento e controle geral da propriedade.
 
-![Screenshot.png](Ranch_System/img/Screenshot.png)
+![Screenshot.png](RanchSystem/img/Screenshot.png)
 ---
 
 ### **Módulo de Funcionários**
 
 Esta tela representa o módulo de gerenciamento de funcionários do RanchSystem. Nela, o usuário pode cadastrar, visualizar e administrar os dados dos colaboradores da fazenda de forma simples e organizada. A interface conta com um formulário superior para inserção de informações como nome completo, CPF, salário e telefone. Logo abaixo, uma tabela exibe todos os funcionários já cadastrados, facilitando a visualização geral e a seleção de registros. Na parte inferior, botões de ação permitem adicionar, editar, excluir e exportar os dados, tornando o fluxo de gerenciamento direto e eficiente. O layout prioriza clareza e praticidade no controle da equipe.
 
-![Screenshot2.png](Ranch_System/img/Screenshot2.png)
+![Screenshot2.png](RanchSystem/img/Screenshot2.png)
 ---
 
 ### **Módulo de Gado**
 
 Esta tela corresponde ao módulo de cadastro e controle do gado da fazenda. O formulário permite registrar informações essenciais e zootécnicas dos animais, como nome, RGN, raça, categoria, iABCZ, proprietário, sexo e dados de nascimento. A separação clara dos campos ajuda a manter a organização e reduz erros no cadastro. Abaixo do formulário, uma tabela lista os animais registrados, possibilitando consulta rápida e ações diretas sobre cada registro. Assim como nos outros módulos, há botões para adicionar, editar, excluir e exportar os dados, reforçando a padronização da interface e a facilidade de uso.
 
-![Screenshot3.png](Ranch_System/img/Screenshot3.png)
+![Screenshot3.png](RanchSystem/img/Screenshot3.png)
 ---
 
 ### **Módulo de Plantações**
@@ -175,7 +175,7 @@ Esta tela representa o módulo de gerenciamento de plantações do RanchSystem. 
 
 Abaixo, uma tabela apresenta os registros já cadastrados, exibindo dados como cultura, área plantada, data de plantio, colheita prevista e uso de defensivos agrícolas. Esse formato facilita o acompanhamento do ciclo produtivo e o planejamento agrícola da propriedade. Na parte inferior, os botões de ação possibilitam adicionar, editar, excluir e exportar os dados, mantendo o padrão visual e funcional dos demais módulos do sistema.
 
-![Screenshot4.png](Ranch_System/img/Screenshot4.png)
+![Screenshot4.png](RanchSystem/img/Screenshot4.png)
 ---
 
 ### **Módulo Financeiro**
@@ -183,7 +183,7 @@ Abaixo, uma tabela apresenta os registros já cadastrados, exibindo dados como c
 Esta tela corresponde ao módulo de movimentação financeira do RanchSystem, responsável pelo controle de ganhos e gastos da fazenda. O formulário superior permite registrar transações financeiras detalhadas, incluindo descrição, tipo da movimentação (ganho ou gasto), categoria e valor em reais.
 Logo abaixo, uma tabela exibe o histórico das movimentações financeiras, apresentando informações como ID, descrição, tipo, categoria, valor e data do lançamento. Esse recurso auxilia no controle financeiro e na análise econômica da propriedade. Assim como nos outros módulos, a tela conta com botões para adicionar, editar, excluir e exportar os dados, garantindo padronização, organização e facilidade na gestão financeira.
 
-![Screenshot5.png](Ranch_System/img/Screenshot5.png)
+![Screenshot5.png](RanchSystem/img/Screenshot5.png)
 ---
 
 ## 🗺️ Roadmap: Futuro do Ranch System
