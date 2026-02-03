@@ -1,88 +1,25 @@
-# Ranch System: Sistema de Gestão Rural 🚜
+# 🚜 Ranch System: Sistema de Gestão Rural
 
-![Java](https://img.shields.io/badge/Java-17+-%23007396.svg?style=for-the-badge&logo=java&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-3.8+-%23C71A36.svg?style=for-the-badge&logo=apache-maven&logoColor=white)
-![Java Swing](https://img.shields.io/badge/Java%20Swing-GUI-%235382A1.svg?style=for-the-badge&logo=java&logoColor=white)
-![Gson](https://img.shields.io/badge/Gson-2.10.1-%23F44336.svg?style=for-the-badge&logo=google&logoColor=white)
-![License](https://img.shields.io/github/license/GilvanPedro/Ranch_System?style=for-the-badge&color=blue)
+## 🌟 Status do Projeto
 
-## 🌟 Visão Geral do Projeto
+[![Linguagem Principal](https://img.shields.io/badge/Java-17%2B-red.svg?style=for-the-badge&logo=java)](https://www.java.com/pt-br/)
+[![Build Tool](https://img.shields.io/badge/Maven-3.x-orange.svg?style=for-the-badge&logo=apache-maven)](https://maven.apache.org/)
+[![Framework UI](https://img.shields.io/badge/Java%20Swing-GUI-blue.svg?style=for-the-badge&logo=openjdk)](https://docs.oracle.com/javase/8/docs/api/javax/swing/package-summary.html)
+[![Persistência](https://img.shields.io/badge/Gson-2.10.1-green.svg?style=for-the-badge&logo=json)](https://github.com/google/gson)
+[![Tipo de Projeto](https://img.shields.io/badge/Tipo-Desktop%20App-purple.svg?style=for-the-badge)](https://en.wikipedia.org/wiki/Desktop_application)
+[![Licença](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+
+## 🎯 Visão Geral do Projeto
 
 Bem-vindo ao **Ranch System**, uma solução de software inovadora e robusta, meticulosamente desenvolvida em Java para revolucionar a gestão de propriedades rurais. Este sistema desktop foi concebido para ser o pilar da eficiência operacional em fazendas modernas, oferecendo um controle sem precedentes sobre os pilares fundamentais de qualquer empreendimento rural: **funcionários, rebanhos, plantações e finanças**.
 
 Com uma interface gráfica intuitiva e responsiva, construída com o poder do Java Swing, o Ranch System transforma complexas tarefas administrativas em processos simplificados e acessíveis. Nosso objetivo é capacitar gestores rurais a tomar decisões estratégicas baseadas em dados precisos e atualizados, impulsionando a produtividade e a sustentabilidade de suas operações. Prepare-se para uma gestão rural inteligente e integrada!
 
-## 🚀 Funcionalidades Essenciais
+## 🏛 Arquitetura e Design de Software
 
-O Ranch System integra um conjunto de módulos poderosos, cada um projetado para atender às necessidades específicas da gestão de uma fazenda:
+O Ranch System adota uma arquitetura inspirada no padrão **Model-View-Controller (MVC)**, adaptada para aplicações desktop em Java Swing. Essa abordagem promove a separação de responsabilidades, facilitando a manutenção, escalabilidade e testabilidade do código. A persistência de dados é realizada através de arquivos JSON, utilizando a biblioteca Gson para serialização e desserialização de objetos.
 
-### 👨‍🌾 Gestão de Funcionários
-
-Gerencie sua equipe com facilidade e precisão. Este módulo permite:
-
-*   **Cadastro Detalhado:** Registre e mantenha informações cruciais de cada colaborador, incluindo nome completo, CPF, salário e dados de contato.
-*   **Validação Inteligente:** Garanta a integridade dos dados com validações automáticas de CPF e telefone, prevenindo erros e duplicidades.
-*   **Controle Completo (CRUD):** Realize operações de Criação, Leitura, Atualização e Exclusão de registros de funcionários de forma eficiente.
-*   **Persistência Segura:** Todos os dados dos funcionários são armazenados de forma estruturada e segura em arquivos JSON.
-
-### 🐄 Gestão de Gado
-
-Monitore seu rebanho com um sistema de rastreamento individualizado, oferecendo:
-
-*   **Registro Individual:** Cadastre cada animal com detalhes como nome, data de nascimento, raça, proprietário, série, RGN (Registro Geral do Animal), categoria, número de filhos e sexo.
-*   **Unicidade de RGN:** O sistema assegura que cada animal possua um RGN único, evitando registros duplicados e facilitando o controle.
-*   **Operações CRUD:** Gerencie o ciclo de vida completo do seu rebanho, desde o nascimento até a saída, com funcionalidades CRUD intuitivas.
-*   **Dados Estruturados:** As informações do rebanho são persistidas em arquivos JSON, garantindo fácil acesso e organização.
-
-### 🌾 Gestão de Plantações
-
-Otimize suas culturas com um controle detalhado e projeções inteligentes:
-
-*   **Registro Abrangente:** Cadastre suas plantações especificando o tipo de cultura, data de plantio, área em hectares e se há uso de agrotóxicos.
-*   **Previsão de Colheita:** O sistema calcula automaticamente a data estimada de colheita, baseando-se no tipo de cultura e seus respectivos ciclos de crescimento.
-*   **Validação de Culturas:** Garanta a consistência dos dados com validações para tipos de plantação e áreas cultivadas.
-*   **Operações CRUD:** Adicione, visualize, edite e remova registros de plantações com agilidade.
-*   **Persistência em JSON:** Mantenha um histórico organizado de todas as suas plantações em arquivos JSON.
-
-### 💰 Gestão Financeira
-
-Tenha total controle sobre as finanças da sua fazenda, com recursos para:
-
-*   **Controle de Fluxo:** Registre todas as movimentações financeiras, categorizando-as como 'GASTO' ou 'GANHO'.
-*   **Categorização Flexível:** Associe cada transação a categorias específicas (Gado, Funcionário, Plantação, Consertos, Contratação, Outros) para uma análise detalhada.
-*   **Saldo em Tempo Real:** Obtenha uma visão clara da saúde financeira da fazenda com o cálculo do saldo financeiro total.
-*   **Validação Financeira:** O sistema verifica a validade das descrições, tipos, categorias e valores, assegurando a precisão dos registros.
-*   **Operações CRUD:** Gerencie todas as suas transações financeiras com operações CRUD completas.
-*   **Dados Financeiros em JSON:** Todas as transações são armazenadas de forma organizada em arquivos JSON.
-
-## 🛠 Tecnologias Utilizadas
-
-O Ranch System é construído sobre uma base tecnológica sólida e comprovada, garantindo desempenho, segurança e manutenibilidade:
-
-| Tecnologia       | Versão Principal | Descrição                                                                                               |
-| :--------------- | :--------------- | :------------------------------------------------------------------------------------------------------ |
-| **Java**         | 17+              | Linguagem de programação robusta e multiplataforma, essencial para a lógica de negócios do sistema.      |
-| **Apache Maven** | 3.8+             | Ferramenta poderosa para automação de build, gerenciamento de dependências e padronização do projeto.   |
-| **Java Swing**   | -                | Toolkit para o desenvolvimento da interface gráfica (GUI) desktop, proporcionando uma experiência rica. |
-| **Gson**         | 2.10.1           | Biblioteca Java da Google para serialização e desserialização de objetos Java para JSON, utilizada para persistência de dados de forma eficiente. |
-
-## 🏛 Arquitetura do Sistema
-
-O projeto segue um padrão arquitetural bem definido para garantir modularidade, escalabilidade e facilidade de manutenção. Embora seja uma aplicação desktop, a organização interna reflete princípios de design de software robustos:
-
-### Padrão MVC (Model-View-Controller)
-
-O Ranch System adota o padrão MVC para separar as responsabilidades da aplicação, promovendo um código mais limpo e organizado:
-
-*   **Model (`Entity`):** Representa os dados e a lógica de negócios. As classes no pacote `br.com.RanchSystem.Entity` (e.g., `Funcionario`, `Gado`, `Plantacao`, `Despesa`) encapsulam os atributos e comportamentos dos objetos do domínio.
-*   **View (`View`):** Responsável pela apresentação dos dados ao usuário. As classes no pacote `br.com.RanchSystem.View` (e.g., `MainView`) utilizam Java Swing para construir a interface gráfica, exibindo informações e capturando interações do usuário.
-*   **Controller (`Controller`):** Atua como intermediário entre o Model e a View, processando as entradas do usuário, atualizando o Model e selecionando a View apropriada para exibição. As classes no pacote `br.com.RanchSystem.Controller` (e.g., `FuncionarioController`, `GadoController`) gerenciam a lógica de aplicação e a persistência dos dados.
-
-### Persistência de Dados em JSON
-
-A persistência dos dados é realizada através de arquivos JSON, utilizando a biblioteca Gson. Cada módulo (Funcionários, Gado, Plantações, Despesas) possui seu próprio arquivo JSON dedicado (`Arquivos/funcionarios.json`, `Arquivos/gados.json`, etc.), garantindo uma separação clara e um formato de dados legível. Os `Controllers` são responsáveis por ler e escrever nesses arquivos, convertendo objetos Java para JSON e vice-versa.
-
-## 📁 Estrutura do Projeto
+### Estrutura de Diretórios e Pacotes
 
 A organização dos diretórios e arquivos do projeto é intuitiva, facilitando a navegação e o entendimento do código:
 
@@ -110,48 +47,144 @@ Ranch_System/
 └── README.md                     # 📄 Este documento detalhado do projeto
 ```
 
-## ▶️ Como Iniciar
+### Diagrama de Classes (Simplificado)
 
-Para colocar o Ranch System em funcionamento em sua máquina, siga estas instruções detalhadas:
+Para ilustrar a interação entre os principais componentes, apresentamos um diagrama de classes simplificado em Mermaid:
 
-### Pré-requisitos Essenciais
+```mermaid
+classDiagram
+    class Main {
+        +main()
+    }
+    class MainView {
+        +MainView()
+        +setVisible(boolean)
+    }
+    class Controller {
+        +gerenciarDados()
+    }
+    class Entity {
+        +atributos
+        +getters/setters
+    }
+    class Logicas {
+        +validarEntrada()
+        +processarDados()
+    }
 
-Antes de prosseguir, certifique-se de que os seguintes softwares estejam instalados e configurados em seu ambiente de desenvolvimento:
+    Main --> MainView : inicializa
+    MainView --> Controller : interage com
+    Controller --> Entity : manipula
+    Controller --> Logicas : utiliza
+    Controller --> Arquivos : persiste
+```
 
-*   **Java Development Kit (JDK) 17 ou superior:** O ambiente de execução e desenvolvimento Java é fundamental. Você pode baixá-lo no [site oficial da Oracle](https://www.oracle.com/java/technologies/downloads/).
-*   **Apache Maven:** Essencial para gerenciar as dependências do projeto e automatizar o processo de build. Faça o download e configure-o a partir do [site oficial do Maven](https://maven.apache.org/download.cgi).
-*   **Uma IDE (Ambiente de Desenvolvimento Integrado):** Embora não seja estritamente obrigatório, o uso de uma IDE como [IntelliJ IDEA](https://www.jetbrains.com/idea/download/), [Eclipse](https://www.eclipse.org/downloads/) ou [VS Code](https://code.visualstudio.com/download) com as extensões Java e Maven apropriadas é **altamente recomendado** para uma experiência de desenvolvimento e execução mais fluida.
+### Fluxo de Execução
 
-### Guia de Instalação e Execução
+1.  **Inicialização:** A aplicação é iniciada através da classe `Main`, que invoca a `MainView` em uma *thread* segura para GUI (`SwingUtilities.invokeLater`).
+2.  **Interface do Usuário:** A `MainView` (e outras classes no pacote `View`) constrói e exibe a interface gráfica, permitindo a interação do usuário.
+3.  **Interação e Controle:** As ações do usuário na GUI são capturadas e delegadas às classes no pacote `Controller`.
+4.  **Lógica de Negócio:** Os `Controllers` orquestram as operações, utilizando as `Entities` (modelos de dados) e as `Logicas` (regras de negócio e validações) para processar as informações.
+5.  **Persistência de Dados:** Os dados são salvos e carregados de arquivos JSON localizados no diretório `Arquivos/`, garantindo a persistência das informações entre as sessões.
 
-1.  **Clonar o Repositório:**
+## ✨ Funcionalidades Essenciais
 
-    Abra seu terminal ou prompt de comando e execute o seguinte comando para clonar o projeto para sua máquina local:
+O Ranch System integra um conjunto de módulos poderosos, cada um projetado para atender às necessidades específicas da gestão de uma fazenda:
 
-    ```bash
-    git clone https://github.com/GilvanPedro/Ranch_System.git
-    cd Ranch_System/RanchSystem
-    ```
+*   **Gestão de Funcionários:** Cadastro, edição, exclusão e consulta de informações de colaboradores.
+*   **Controle de Rebanho:** Registro detalhado de animais, incluindo dados de saúde, alimentação e movimentação.
+*   **Administração de Plantações:** Gerenciamento de culturas, ciclos de plantio, colheita e insumos.
+*   **Controle Financeiro:** Registro de despesas e receitas, permitindo uma visão clara da saúde financeira da propriedade.
+*   **Persistência de Dados:** Todos os dados são armazenados localmente em arquivos JSON, garantindo a segurança e a disponibilidade das informações.
+*   **Interface Gráfica Intuitiva:** Desenvolvida com Java Swing para uma experiência de usuário amigável e eficiente.
 
-2.  **Compilar o Projeto com Maven:**
+## 🛠 Dependências
 
-    Navegue até o diretório `RanchSystem` (onde o arquivo `pom.xml` está localizado) e utilize o Maven para compilar o projeto e resolver suas dependências:
+O projeto utiliza as seguintes dependências:
 
-    ```bash
-    mvn clean install
-    ```
+*   **Gson (com.google.code.gson:gson:2.10.1)**: Biblioteca Java para serialização e desserialização de objetos Java para JSON e vice-versa. Essencial para a persistência de dados.
 
-    Este comando irá baixar todas as bibliotecas necessárias (incluindo Gson), compilar o código-fonte e empacotar a aplicação em um arquivo JAR executável, que será encontrado na pasta `target/`.
+## ⚙ Pré-requisitos
 
-3.  **Executar a Aplicação Desktop:**
+Para compilar e executar o Ranch System, você precisará ter instalado:
 
-    Após a compilação bem-sucedida, você pode iniciar a aplicação Ranch System diretamente do terminal:
+*   **Java Development Kit (JDK)**: Versão 17 ou superior. Baixe em [site oficial da Oracle](https://www.oracle.com/java/technologies/downloads/).
+*   **Apache Maven**: Versão 3.x ou superior. Baixe em [site oficial do Maven](https://maven.apache.org/download.cgi).
 
-    ```bash
-    java -jar target/RanchSystem-1.0-SNAPSHOT-jar-with-dependencies.jar
-    ```
+## 🚀 Instalação e Execução
 
-    **Alternativa via IDE:** Se você estiver utilizando uma IDE, localize a classe principal `br.com.RanchSystem.Main` e execute-a diretamente. A interface gráfica do Ranch System será exibida.
+Siga os passos abaixo para configurar e executar o projeto em sua máquina local:
+
+### 1. Clonagem do Repositório
+
+Abra seu terminal ou prompt de comando e execute:
+
+```bash
+git clone https://github.com/GilvanPedro/Ranch_System.git
+cd Ranch_System/RanchSystem
+```
+
+### 2. Compilação do Projeto
+
+Navegue até o diretório `RanchSystem` e compile o projeto usando Maven:
+
+```bash
+mvn clean install
+```
+
+Este comando irá baixar as dependências, compilar o código e empacotar a aplicação em um arquivo JAR executável no diretório `target/`.
+
+### 3. Execução da Aplicação
+
+Após a compilação, você pode executar a aplicação a partir do terminal:
+
+```bash
+java -jar target/RanchSystem-1.0-SNAPSHOT.jar
+```
+
+**Nota:** Certifique-se de que o `exempoIcon.png` esteja acessível no classpath ou no diretório de execução, caso contrário, o ícone da aplicação pode não ser carregado corretamente.
+
+## 🖼 Interface do Sistema
+
+Ao iniciar a aplicação, você será recebido por uma tela principal que permite navegar entre os diferentes módulos de gestão (Funcionários, Rebanho, Plantações, Despesas).
+
+### **Dashboard (Painel Administrativo)**
+
+O Dashboard apresenta uma visão geral da fazenda, funcionando como o painel administrativo principal do sistema. As informações são exibidas em cards visuais, permitindo ao usuário acompanhar rapidamente os principais indicadores, como total de gados, número de funcionários, plantações, saldo financeiro, área total, média iABCZ, status da fazenda e data atual. Esse modelo facilita a tomada de decisões ao concentrar dados importantes em uma única tela. O uso de cores nos valores ajuda a destacar cada métrica, tornando a leitura mais intuitiva. É uma tela focada em resumo, monitoramento e controle geral da propriedade.
+
+![Screenshot.png](Ranch_System/img/Screenshot.png)
+---
+
+### **Módulo de Funcionários**
+
+Esta tela representa o módulo de gerenciamento de funcionários do RanchSystem. Nela, o usuário pode cadastrar, visualizar e administrar os dados dos colaboradores da fazenda de forma simples e organizada. A interface conta com um formulário superior para inserção de informações como nome completo, CPF, salário e telefone. Logo abaixo, uma tabela exibe todos os funcionários já cadastrados, facilitando a visualização geral e a seleção de registros. Na parte inferior, botões de ação permitem adicionar, editar, excluir e exportar os dados, tornando o fluxo de gerenciamento direto e eficiente. O layout prioriza clareza e praticidade no controle da equipe.
+
+![Screenshot2.png](Ranch_System/img/Screenshot2.png)
+---
+
+### **Módulo de Gado**
+
+Esta tela corresponde ao módulo de cadastro e controle do gado da fazenda. O formulário permite registrar informações essenciais e zootécnicas dos animais, como nome, RGN, raça, categoria, iABCZ, proprietário, sexo e dados de nascimento. A separação clara dos campos ajuda a manter a organização e reduz erros no cadastro. Abaixo do formulário, uma tabela lista os animais registrados, possibilitando consulta rápida e ações diretas sobre cada registro. Assim como nos outros módulos, há botões para adicionar, editar, excluir e exportar os dados, reforçando a padronização da interface e a facilidade de uso.
+
+![Screenshot3.png](Ranch_System/img/Screenshot3.png)
+---
+
+### **Módulo de Plantações**
+
+Esta tela representa o módulo de gerenciamento de plantações do RanchSystem. O sistema permite registrar e acompanhar os cultivos realizados na fazenda de forma organizada e prática. Na parte superior, há um formulário para cadastro das informações principais da cultura, como tipo de cultivo, área em hectares e indicação do uso de agrotóxicos.
+
+Abaixo, uma tabela apresenta os registros já cadastrados, exibindo dados como cultura, área plantada, data de plantio, colheita prevista e uso de defensivos agrícolas. Esse formato facilita o acompanhamento do ciclo produtivo e o planejamento agrícola da propriedade. Na parte inferior, os botões de ação possibilitam adicionar, editar, excluir e exportar os dados, mantendo o padrão visual e funcional dos demais módulos do sistema.
+
+![Screenshot4.png](Ranch_System/img/Screenshot4.png)
+---
+
+### **Módulo Financeiro**
+
+Esta tela corresponde ao módulo de movimentação financeira do RanchSystem, responsável pelo controle de ganhos e gastos da fazenda. O formulário superior permite registrar transações financeiras detalhadas, incluindo descrição, tipo da movimentação (ganho ou gasto), categoria e valor em reais.
+Logo abaixo, uma tabela exibe o histórico das movimentações financeiras, apresentando informações como ID, descrição, tipo, categoria, valor e data do lançamento. Esse recurso auxilia no controle financeiro e na análise econômica da propriedade. Assim como nos outros módulos, a tela conta com botões para adicionar, editar, excluir e exportar os dados, garantindo padronização, organização e facilidade na gestão financeira.
+
+![Screenshot5.png](Ranch_System/img/Screenshot5.png)
+---
 
 ## 🗺️ Roadmap: Futuro do Ranch System
 
@@ -174,10 +207,10 @@ Sua contribuição é muito valiosa para o crescimento do Ranch System! Se você
 5.  **Envie para sua Branch:** `git push origin feature/sua-nova-feature`.
 6.  **Abra um Pull Request (PR):** Descreva detalhadamente suas alterações, o problema que resolve e como foi testado. Estamos ansiosos para revisar sua contribuição!
 
-## ⚖️ Licença
+## 📄 Licença
 
 Este projeto está sob a **Licença MIT**. Para detalhes completos sobre os termos e condições, consulte o arquivo [LICENSE](LICENSE) no repositório.
 
-## 👤 Autores
+## 🧑‍💻 Autor
 
-*   **Gilvan Pedro** - Desenvolvedor Principal
+Este projeto foi desenvolvido por [Gilvan Pedro](https://github.com/GilvanPedro).
